@@ -17,6 +17,7 @@ namespace PrimeProject.Controllers
         {
             try
             {
+
                 return Request.CreateResponse<bool>(HttpStatusCode.OK, NumberManipulationBL.IsPrime(number));
             }
             catch (ArgumentException e)
